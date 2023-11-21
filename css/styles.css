@@ -1,0 +1,37 @@
+.body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#cards {
+    padding: 5% 10%;
+    
+}
+
+
+#features {
+    padding: 7% 10%;
+    text-align: center;
+
+}
+
+#video{
+    padding: 2% 5%;
+}
+
+#formvalidation{
+    padding: 5% 10%;
+}
+
+#Table{
+    padding: 5% 10%;
+}
+
+
+.icon {
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.icon:hover {
+    color: rgb(34, 165, 247);
+}

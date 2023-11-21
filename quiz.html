@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+body {
+  background-color: #f7f9fa;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#container {
+  max-width: 20rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+section:hover {
+  margin-right: 40px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.word {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.btn {
+  text-align: center;
+}
+
+#submit {
+  padding: 0.5rem 4rem;
+  font: inherit;
+  color: #2c3e50;
+  cursor: pointer;
+  border: 1px solid #27ae60;
+  background-color: #27ae60;
+  transition: all 0.5s ease-in-out;
+}
+
+#submit:hover {
+  background-color: #2ecc71;
+}
+
+#results {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+
+</style>
+</head>
+
+
+<div id="container">
+    <h1>What do you know about google?</h1>
+    <div id="test"></div>
+  </div>
+  <div class="btn">
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+  </div>
+
+
+<script>
+
+function buildTest() {
+  const output = [];
+
+  testWords.forEach((currentWord, wordIndex) => {
+    const answers = [];
+    for (letter in currentWord.answers) {
+      answers.push(
+        `<section>
+                <label>
+                <input type="radio" name="question${wordIndex}" value="${letter}">
+                ${letter} :
+                ${currentWord.answers[letter]}
+              </label>
+              </section>`
+      );
+    }
+    output.push(
+      `<div class="word"> ${currentWord.word} </div>
+            <div class="answers"> ${answers.join("")} </div>`
+    );
+  });
+
+  testContainer.innerHTML = output.join("");
+}
+
+function showResults() {
+  const answerContainers = testContainer.querySelectorAll(".answers");
+
+  let correctNum = 0;
+
+  testWords.forEach((currentWord, wordIndex) => {
+    const answerContainer = answerContainers[wordIndex];
+    const selector = `input[name=question${wordIndex}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    if (userAnswer === currentWord.correctAnswer) {
+      correctNum++;
+      answerContainers[wordIndex].style.color = "green";
+    } else {
+      answerContainers[wordIndex].style.color = "red";
+    }
+  });
+  resultsContainer.innerHTML = `${correctNum} out of ${testWords.length}`;
+}
+
+const testContainer = document.getElementById("test");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
+
+var testWords = [
+  {
+    word: "1) When google founded",
+    answers: {
+      a: "1988",
+      b: "1998",
+      c: "2002",
+    },
+    correctAnswer: "b",
+  },
+  {
+    word: "2) Google founder #1?",
+    answers: {
+      a: "Larry Page",
+      b: "Bill Gates",
+      c: "Steve Jobs",
+    },
+    correctAnswer: "a",
+  },
+  {
+    word: "3) Google founder #2?",
+    answers: {
+      a: "Sergey Brin",
+      b: "Mark Zuckerberg",
+      c: "Pavel Durov",
+    },
+    correctAnswer: "a",
+  },
+  {
+    word: "4) At which university did the Google founder meet?",
+    answers: {
+      a: "MIT",
+      b: "Oxford University",
+      c: "Stanford University",
+    },
+    correctAnswer: "c",
+  },
+  {
+    word: "5) Google Drive is?",
+    answers: {
+      a: "Video hosting",
+      b: "File storage",
+      c: "Web hosting",
+    },
+    correctAnswer: "b",
+  },
+
+  {
+    word: "6) How many founders of Google?",
+    answers: {
+      a: "3",
+      b: "2",
+      c: "1",
+    },
+    correctAnswer: "b",
+  },
+  {
+    word: "7) Who is the parent company of Google?",
+    answers: {
+      a: "Petronas",
+      b: "Alphabet",
+      c: "Shell",
+    },
+    correctAnswer: "b",
+  },
+
+  {
+    word: "8) When Google released their very first smartphone?",
+    answers: {
+      a: "2007",
+      b: "2010",
+      c: "2014",
+    },
+    correctAnswer: "b",
+  },
+
+  {
+    word: "9) What is the name of their first smartphone?",
+    answers: {
+      a: "Pixel",
+      b: "Google Phone",
+      c: "Nexus",
+    },
+    correctAnswer: "c",
+  },
+
+  {
+    word: "10) Wher is the headquarter of Google located?",
+    answers: {
+      a: "USA",
+      b: "UK",
+      c: "Germany",
+    },
+    correctAnswer: "a",
+  },
+];
+
+buildTest();
+submitButton.addEventListener("click", showResults);
+
+
+
+
+</script>
+
+
+<body>
+
+</body>
+
+
+
+</html>

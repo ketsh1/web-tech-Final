@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <title>Google Pixel Models</title>
+    <meta charset="utf-8">
+    <meta name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/b8702983c4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/x-icon" href="images/google_logo.png">
+
+
+
+
+
+
+    <!--scroll to top-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <!--Scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/google_Store_logo.png" alt="Bootstrap" width="200" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="phones.html">Phones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="earbuds.html">Earbuds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tablets.html">Tablets</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Game, quiz and shipping address
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="game.html" target="_blank">Game</a></li>
+                            <li><a class="dropdown-item" href="quiz.html" target="_blank">Quiz</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="form.html">Shipping address</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger me-2" type="submit">
+                        <img src="images/search_logo.png" alt="Bootstrap" width="20" height="20">
+                        Search</button>
+
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+
+    <!--Cards-->
+    <section id="cards">
+        <div class=" row gy-5">
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/514pgzf2c2L._AC_UY327_FMwebp_QL65_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 6a</h5>
+                            <p class="card-text">Pixel for everyone</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/71QQZr2pNSL._AC_SX466_.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 6</h5>
+                            <p class="card-text">Middle option</p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/6191aDbiwjL._AC_UY327_FMwebp_QL65_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 6 Pro</h5>
+                            <p class="card-text">Ultimate option</p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class=" row gy-5">
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/qAV-C0QQF5bh_YTmCH6C-qXKx0UbT54EAq_9GQW0l7n5_ioSn9FZ2iuSp23NDwdbgWuBJrjJ5ycQE6C4j3XQPhnZDYo9fGhdEdQ=s1400-w1400-e365-rp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 7a</h5>
+                            <p class="card-text">Built to perform. Priced just right.</p>
+
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/zTUwNrMXQA0qkGDy8XISyJ5eED2sqbRfHjEe86jvGuGT-2BnU8rSt6qfn2HEx8-3KgVHz5l7XrZ1CYUfylCyC5mJJUjPboGUIVmc=s1400-w1400-e365-rp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 7</h5>
+                            <p class="card-text">Enjoy new features every few months.</p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/lNy_tmKZdLhrx28jsS8HeOKFdpFX53kE97VMSEtZwEwrtShY1C3Gfc-Cer2U6tv2gozQYZsEltlF0MRaN8kEKcnLCgkOCy-U23A=s1400-w1400-e365-rp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 7 Pro</h5>
+                            <p class="card-text">Super helpful. In so many ways.</p>
+
+
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class=" row gy-5">
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/ZV1juIhDkrC0jmDquLDbyVUQFD6NowZ6EnQA-KFXSQG1L_AUQMMunqCblbWtFotRHxuHxmZSKhEEXgKA-iiO2fYCPrERoz1yEw0=s1400-w1400-e365-rp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 8</h5>
+                            <p class="card-text">Powerful in every way. Helpful every day.</p>
+
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/wDtnJXPNwLPPrrdL2-3SVzH6dYrpBG-aFHS08acnSfyenU6BxAVMsYVWzsysN_njfMk0D6yjRy8rqrr7DfV_W9mAQ2FerNaLvja1=s1400-w1400-e365-rp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 8 Pro</h5>
+                            <p class="card-text">The best of Google. Even more pro.</p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="p-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://lh3.googleusercontent.com/MRJaKRstul0cn8Ny6sBSJWSHKdjolytrFK_CSRDtaSoTmW1w8wuX1OYTjYNfyg23SV0DshsE8yXhuub9UIOtq9d15BKM7OA5tQ=s1400-w1400-e365-rp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Fold</h5>
+                            <p class="card-text">Power and innovation. Folded into one.</p>
+
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Buy pixel phone</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Get 10% discount if you are a college student
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
+                    <button type="button" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Features-->
+    <section id="features">
+
+        <div class="row">
+
+            <div class="feature-box col-lg-3">
+                <i class="fa-solid fa-calculator fa-5x icon"></i>
+                <h3>Finance your device.</h3>
+                <p></p>
+                <a href="#" class="link-primary">Learn more</a>
+            </div>
+            <div class="feature-box col-lg-3">
+                <i class="fa-solid fa-box fa-5x icon"></i>
+                <h3>Free shipping.</h3>
+                <p></p>
+                <a href="#" class="link-primary">Learn more </a>
+            </div>
+            <div class="feature-box col-lg-3">
+                <i class="fa-solid fa-tag fa-5x icon"></i>
+                <h3>Get our price match promise.</h3>
+                <p></p>
+                <a href="#" class="link-primary">Learn more</a>
+            </div>
+            <div class="feature-box col-lg-3">
+                <i class="fa-solid fa-calendar-days fa-5x icon"></i>
+                <h3>Free and easy returns.</h3>
+                <p></p>
+                <a href="#" class="link-primary">Learn more</a>
+            </div>
+
+
+
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #a8a9ad">
+
+            <div class="container p-4 pb-0">
+
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Final project work
+                            </h6>
+                            <p>
+                                My project represents a Google Store with physical products made by Google.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Baktiyar Nurlanuly
+                                Astana IT University student
+                            </h6>
+
+
+
+
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
+                                href="https://www.linkedin.com/in/bakhtiyar-nurlanuly-7b8833266/" role="button"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <!-- Github -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+                                href="https://github.com/ketsh1" role="button"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+
+            </div>
+
+
+
+        </footer>
+        <!-- Footer -->
+
+
+
+
+        <!--scroll to top js-->
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+</body>
+
+
+
+</html>
